@@ -174,11 +174,15 @@ DialogUtil.getInstance()//注:这里的this必须为activity不能是Context
 * 多图选择 <br>
 ```java
 PhotoPickUtil.newInstance().startPhotoPickToList(getActivity(),mPickData);
+//传入最多可选择多少张
+PhotoPickUtil.newInstance().startPhotoPickToList(getActivity(),9,mPickData);
 mPickData:存放选择图片的数组
 ```
 * 单图选择 <br>
 ```java
 PhotoPickUtil.newInstance().startPhotoPickToOne(getActivity());
+//传入需要裁切的图片的长宽比
+PhotoPickUtil.newInstance().startPhotoPickToOne(getActivity(),2,3);
 ```
 * 回调函数 <br>
 
