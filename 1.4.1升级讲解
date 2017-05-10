@@ -1,0 +1,52 @@
+在工程的build.gradle中添加如下代码,一步轻松搞定
+compile 'com.github.qxq.library:qxqsdk:1.4.1'
+
+1、QxqToastUtil
+去除在Application中实例化的步骤，改为直接ToastUtil.getInstance().showToast();
+
+2、QxqLogUtil
+还是需要在Application中实例化，调用时改为LogUtil.getInstance().i(String tag, String desc);
+
+3、QxqDialogUtil
+去除在Application中实例化的步骤
+
+a、调用不同dialog
+Dialog dialog = DialogUtil.getInstance()
+		.dialog()
+		.setTitle("")//diaolog标题
+		.setMessage("")//diaolog描述
+		.setBtn1Text("")//第一个按钮的文本
+		.setBtn2Text("")//第二个按钮的文本
+		.setSetCancelable(false)//设置按返回键时dialog是否消失
+		.setSetCanceledOnTouchOutside(false)//设置点击dialog以外区域时dialog是否消失
+		.setBtn1Listener(new DialogInterface.OnClickListener{})//设置第一个按钮的点击回调
+		.setBtn2Listener(new DialogInterface.OnClickListener{})//设置第二个按钮的点击回调
+		.showDialog(this);
+		
+b、调用带进度条的diaolog （ProgressDialog）
+ProgressDialog progressDialog = DialogUtil.getInstance()
+		.progressDialog()
+		.setTitle("")//diaolog标题
+		.setMessage("")//diaolog描述
+		.setSetCancelable(false)//设置按返回键时dialog是否消失
+		.setSetCanceledOnTouchOutside(false)//设置点击dialog以外区域时dialog是否消失
+		.showProgressDialog(this);
+		
+4、QxqHttpUtil
+去除在Application中实例化的步骤
+修改setBaseUrl方法为setBaseParam
+setBaseParam方法传递两个参数：参数一：BaseUrl   参数二：http请求超时时间（秒）参数二可不填，默认为8秒
+QxqHttpUtil.getInstance().setBaseParam("http://api.1313m.com/",8);
+由之前的QxqHttpUtil.onBind()改为QxqHttpUtil.getInstance()
+QxqHttpUtil.getInstance().get("your url",
+                        new OnHttpCallBackListener() {
+                            @Override
+                            public void onComplete(String json) {
+                                QxqLogUtil.onBind().i("TAG","json..."+json);
+                            }
+
+                            @Override
+                            public void onError(String error) {
+                                QxqLogUtil.onBind().i("TAG","error..."+error);
+                            }
+                        });

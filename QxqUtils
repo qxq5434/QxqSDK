@@ -1,0 +1,317 @@
+
+
+	/**
+	 * 清除html标签
+	 * 
+	 * @param htmlStr
+	 * @return
+	 */
+	public static String delHTMLTag(String htmlStr);
+	/**
+	 * 调整图片大小
+	 * 
+	 * @param b
+	 * @param w
+	 * @param h
+	 * @return
+	 */
+	public static Bitmap sBitmap(Context context, Bitmap b);
+
+	/**
+	 * 计算两点间的距离
+	 * 
+	 * @param lat_a
+	 * @param lng_a
+	 * @param lat_b
+	 * @param lng_b
+	 * @return
+	 */
+	public static double gps2m(double lat_a, double lng_a, double lat_b,
+			double lng_b);
+
+	/**
+	 * 获取sd卡跟目录
+	 * 
+	 * @return
+	 */
+	public static String getSDPath() ;
+
+	/**
+	 * 去重复
+	 * 
+	 * @param list
+	 * @return
+	 */
+	public static ArrayList<String> removeDuplicateWithOrder(
+			ArrayList<String> list);
+
+	/**
+	 * 获取百分比
+	 * 
+	 * @param p1
+	 * @param p2
+	 * @return
+	 */
+	public static String getPercent(double p1, double p2) ;
+	/**
+	 * 获取设备宽
+	 * 
+	 * @param context
+	 * @return
+	 */
+	public static int getWidth(Context context);
+
+	/**
+	 * 获取设备高
+	 * 
+	 * @param context
+	 * @return
+	 */
+	public static int getHeight(Context context);
+
+	/**
+	 * 将字符串转为时间戳
+	 * 
+	 * @param time
+	 * @return
+	 */
+	public static long timeToLong(String time);
+  
+	/**
+	 * 获取当前时间
+	 */
+	public static String getTime() ;
+
+	/**
+	 * 获取当前时间
+	 * 
+	 * @param str
+	 *            时间格式
+	 * @return
+	 */
+	public static String getTime(String str) ;
+
+	/**
+	 * 根据时间获取当前为周几
+	 * 
+	 * @param pTime
+	 * @return
+	 */
+	public static String getWeek(String pTime) ;
+	/**
+	 * 计算两个日期之间的差
+	 * 
+	 * @param startTime
+	 * @param endTime
+	 * @param format
+	 * @return
+	 */
+	public static String dateDiff(String startTime, String endTime);
+	/**
+	 * 获取文件夹大小
+	 * 
+	 * @param file
+	 *            File实例
+	 * @return long 单位为M
+	 * @throws Exception
+	 */
+	public static float getFolderSize(File file) throws Exception ;
+
+	/**
+	 * 递归删除文件和文件夹
+	 * 
+	 * @param file
+	 *            要删除的根目录
+	 */
+	public static void RecursionDeleteFile(File file);
+
+	/**
+	 * 验证邮箱
+	 * 
+	 * @param email
+	 * @return
+	 */
+	public static boolean isEmail(String email) ;
+
+	/**
+	 * 验证纯数字
+	 * 
+	 * @param str
+	 * @return
+	 */
+	public static boolean isNumeric(String str);
+
+	/**
+	 * 验证邮编
+	 * 
+	 * @param paramString
+	 * @return
+	 */
+	public static boolean isZipNO(String zipString);
+
+	/**
+	 * 验证手机号
+	 * 
+	 * @param phoneNumber
+	 * @return
+	 */
+	public static boolean isMobileNO(String mobiles) ;
+
+	/**
+	 * 计算两个日期之间相差的天数
+	 * 
+	 * @param smdate
+	 *            较小的时间
+	 * @param bdate
+	 *            较大的时间
+	 * @return 相差天数
+	 * @throws ParseException
+	 */
+	public static int daysBetween(Date smdate, Date bdate)
+			throws ParseException;
+	/**
+	 * 比较两个日期大小
+	 * 
+	 * @param DATE1
+	 * @param DATE2
+	 * @param str
+	 * @return
+	 */
+	public static int compare_date2(String DATE1, String DATE2, String str);
+
+	/**
+	 * 计算星座
+	 * 
+	 * @param month
+	 *            月
+	 * @param day
+	 *            日
+	 * @return
+	 */
+	public static String star(int month, int day) ;
+
+	/**
+	 * 全角转换为半角
+	 * 
+	 * @param input
+	 * @return
+	 */
+	public static String ToDBC(String input) ;
+
+	/**
+	 * 根据字母排序获取签名字符串
+	 * 
+	 * @param str
+	 * @param s
+	 * @return
+	 */
+	public static String getSign(String str, String[] s) ;
+
+	/**
+	 * 比较
+	 * 
+	 * @param s1
+	 * @param s2
+	 * @return
+	 */
+	public static int compare(String s1, String s2);
+
+	/**
+	 * 排序
+	 * 
+	 * @param src
+	 */
+	public static void sort(String[] src) ;
+
+	/**
+	 * 判断传入的参数号码为哪家运营商
+	 * 
+	 * @param mobile
+	 * @return 运营商名称
+	 */
+	public static String validateMobile(String mobile) ;
+
+	/**
+	 * 只支持MIUI V6
+	 * 
+	 * @param context
+	 * @param type
+	 *            0--只需要状态栏透明 1-状态栏透明且黑色字体 2-清除黑色字体
+	 */
+	public static void setStatusBarTextColor(Activity context, int type) ;
+
+	/**
+	 * 获取设备唯一id
+	 */
+	public static String getDeviceId(Context context) ;
+
+	/**
+	 * 保留几位小数点
+	 * 
+	 * @param value
+	 * @param num
+	 * @return
+	 */
+	public static BigDecimal getBigDecimal(float value, int num);
+
+	/**
+	 * 获取数组中最大值
+	 * 
+	 * @param array
+	 * @return
+	 */
+	public static double getMax(double[] array);
+
+	/**
+	 * 获取数组中最大值
+	 * 
+	 * @param array
+	 * @return
+	 */
+	public static int getMax2(List<Integer> array) ;
+
+	/**
+	 * 获取数组中最小值(数组)
+	 * 
+	 * @param array
+	 * @return
+	 */
+	public static double getMin(double[] array) ;
+
+	/**
+	 * 获取数组中最小值(结合)
+	 * 
+	 * @param array
+	 * @return
+	 */
+	public static int getMin2(List<Integer> array);
+
+	/**
+	 * TextView设置图片
+	 * 
+	 * @param context
+	 * @param res
+	 * @param textView
+	 * @param textImage
+	 */
+	public static void setTextImage(Context context, int res,
+			TextView textView, TextImage textImage) ;
+
+	/**
+	 * 时间戳转时间字符串（自定义时间格式）
+	 * 
+	 * @param num
+	 * @param str
+	 *            "MM/dd"
+	 * @return
+	 */
+	public static String longToTime(long num, String str) ;
+	/**
+	 * 获取状态栏的高度
+	 * 
+	 * @param activity
+	 * @return
+	 */
+	public static int getStatusBarHeight(Activity activity) ;
+
+}
