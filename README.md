@@ -4,8 +4,7 @@
 
 qxqsdk demo请移步https://github.com/qxq5434/qxqsdkExample/<br><br>
 
-1.3.4版本已经完成第三方登录和分享,请各位小伙伴尽快升级到1.3.4版本<br>
-1.3.4版本添加RecyclerView的BaseAdapter、自定义轮播广告控件、第三方登录（QQ和微信）、第三方分享（QQ和微信），详情请参考下面的介绍<br>
+1.3.4版本添加RecyclerView的BaseAdapter、自定义轮播广告控件、第三方登录（QQ和微信）、第三方分享（QQ和微信），详情请参考下面的介绍<br><br>
 
 
 1.4.1版本升级完成。<br>
@@ -22,11 +21,11 @@ qxqsdk demo请移步https://github.com/qxq5434/qxqsdkExample/<br><br>
 优化RecyclerView的BaseAdapter<br>
 优化QxqDialogUtils<br>
 添加控件ColorTrackTextView(变色字体)<br>
-修改最小版本只能是大于等于21的bug<br>
+修改最小版本只能是大于等于21的bug<br><br>
 
 1.4.6版本更新<br>
 添加NDK图片压缩功能,采用JPEG的压缩算法,调用C代码去进行图片压缩<br>
-RecyclerView的BaseAdapter添加瀑布流列表，添加数据全部加载完后的显示操作<br>
+RecyclerView的BaseAdapter添加瀑布流列表，添加数据全部加载完后的显示操作<br><br>
 
 ```java
 compile 'com.github.qxq.library:qxqsdk:1.4.6'
