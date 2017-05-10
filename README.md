@@ -2,6 +2,8 @@
 
 提供各种基类、工具类、图片选择器(包含裁剪功能)、Android6.0动态权限管理、网络请求、文件上传下载、应用检查更新、RecyclerView万能Adapter、第三方分享、登录、NDK图片压缩等功能，极大的提升了开发的效率<br><br>
 
+qxqsdk demo请移步https://github.com/qxq5434/qxqsdkExample/<br><br>
+
 1.3.4版本已经完成第三方登录和分享,请各位小伙伴尽快升级到1.3.4版本<br>
 1.3.4版本添加RecyclerView的BaseAdapter、自定义轮播广告控件、第三方登录（QQ和微信）、第三方分享（QQ和微信），详情请参考下面的介绍<br>
 
