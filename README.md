@@ -1,2 +1,0 @@
-# QxqSDK
-qxqsdk example
