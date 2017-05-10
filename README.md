@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # QxqSDK
 qxqsdk example
 =======
@@ -809,8 +808,3 @@ ImageUtils.compressBitmap(tempCompressImgPath, afterCompressImgFile.getPath());
 ImageUtils.compressBitmap(bimap, afterCompressImgFile.getPath());
 ```
 
-
-
-
-
->>>>>>> qxqsdk1.4.6 example
