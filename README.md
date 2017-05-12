@@ -54,7 +54,14 @@ Activity的基类
 Fragment的基类
 
 * QxqBaseSwipeBackActivity <br>
-带有滑动返回功能的Activity的基类
+带有滑动返回功能的Activity的基类<br>
+```java
+//在主Activity中继承该类并需要在onCreate中调用一下代码
+SwipeBackHelper.getCurrentPage(this)
+                .setSwipeBackEnable(false);
+SwipeBackHelper.getCurrentPage(this).setDisallowInterceptTouchEvent(true);
+```
+
 
 * QxqBaseMVPActivity <br>
 MVP架构的Activity基类
