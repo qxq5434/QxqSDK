@@ -1,6 +1,6 @@
 # QxqSDK
 
-提供各种基类、工具类、图片选择器(包含裁剪功能)、Android6.0动态权限管理、网络请求、文件上传下载、应用检查更新、RecyclerView万能Adapter、第三方分享、登录、NDK图片压缩等功能，极大的提升了开发的效率<br><br>
+提供各种基类、工具类、图片选择器(包含裁剪功能)、Android6.0动态权限管理、利用RxJava+retrofit2+okHttp实现网络请求和文件上传下载、应用检查更新、RecyclerView万能Adapter、第三方分享、登录、NDK图片压缩等功能，极大的提升了开发的效率<br><br>
 
 qxqsdk demo请移步https://github.com/qxq5434/qxqsdkExample/<br><br>
 
