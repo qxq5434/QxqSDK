@@ -193,6 +193,13 @@ PhotoPickUtil.newInstance().startPhotoPickToOne(getActivity(),2,3);
 ```
 * 回调函数 <br>
 
+* 查看图片 <br>
+```java
+//传入最大显示多少张,传入选择的图片集合，点击的第几张图片
+PhotoPickUtil.newInstance().startPhotoPickToSeeImage(getActivity(),9,mPickData,0);
+```
+
+
 ```java
 //在程序的onActivityResult中调用如下回调函数
 PhotoPickUtil.newInstance().onActivityResult(requestCode,requestCode,data, new PhotoPickResult() {
